@@ -1,3 +1,4 @@
+index.html will be ur home page
 this will be ur home page
 open ur repo on github website
 settings
