@@ -1,0 +1,6 @@
+this will be ur home page
+open ur repo on github website
+settings
+pages
+branch -> dropdown so pick "main"
+then just refresh ur page after 1 min
