@@ -4,12 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masoom</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <style>
+        /* .root{
+            --color: purple;
+        } */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            /* color: var(--color); */
+        }
+        header{
+            display: flex;
+            padding: 5px;
+            justify-content: right;
+            gap: 10px;
+        }
+        header>*{
+            background-color: blue;
+            padding: 10px;
+            border-radius: 10px;
+            filter: drop-shadow(10px 10px 10px navy);
+        }
+        header>a:hover{
+            background-color: aqua;
+        }
+        header>a{
+            color: black;
+            text-decoration: none;
+        }
+        header>p{
+            border-bottom: 3px solid green;
+        }
+        
+        main{
+            border: 1px solid black;
+            animation: 1s ease-in-out;
+        }
+        footer{
+
+        }
+        
+    </style>
 </head>
 <body>
     <header>
-        <a href="./index.html">Home</a>
-        <a href="./pages/3Dartist.html">3D Artist</a>
-        <a href="./pages/programmer.html">Game Programmer</a>
+        <p>Home</p>
+        <a href="pages/3Dartist.html">3D Artist</a>
+        <a href="pages/programmer.html">Game Programmer</a>
     </header>
+    <main>
+        <h1>Syed Masoom</h1>
+    </main>
+    <footer>
+
+</footer>
 </body>
 </html>
