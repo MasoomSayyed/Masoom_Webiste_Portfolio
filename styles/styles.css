@@ -1,6 +1,9 @@
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+body {
   scroll-behavior: smooth;
   position: relative;
 }
@@ -43,7 +46,7 @@ body main {
 }
 body main #hero {
   text-align: center;
-  padding: 10px;
+  padding: 20px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,7 +58,7 @@ body main #hero *:nth-child(1) {
   justify-content: center;
   align-items: end;
 }
-@media (min-width: 500px) {
+@media (min-width: 720px) {
   body main #hero *:nth-child(1) {
     font-size: 2vw;
   }
@@ -69,7 +72,7 @@ body main #hero *:nth-child(2) {
 body main #hero *:nth-child(2) a {
   font-size: 13vw;
   margin: 5px;
-  transition: font-size 0.6s ease;
+  transition: font-size 0.5s ease;
 }
 body main #hero *:nth-child(2) a:hover {
   font-size: 15vw;
@@ -80,6 +83,13 @@ body main #hero *:nth-child(3) {
   justify-content: space-between;
   align-items: end;
   justify-self: center;
-  width: 100%;
-  max-width: 600px;
+  background-color: greenyellow;
+  width: 85vw;
+}
+@media (max-width: 700px) {
+  body main #hero *:nth-child(3) {
+    width: 100%;
+    max-width: 600px;
+    background-color: aqua;
+  }
 }/*# sourceMappingURL=styles.css.map */

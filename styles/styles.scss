@@ -1,11 +1,14 @@
-body{
+*{
     margin: 0;
     padding: 0;
+}
+body{
     scroll-behavior: smooth;
     position: relative;
     &::-webkit-scrollbar {
         display: none;
     }
+    // header section
     header{
         position: sticky;
         top: 0;
@@ -36,18 +39,26 @@ body{
             }
         }
     }
+
+    // main page
     main{
         position: relative;
+        // the main tag has further sub tags called sections.
+
+
+        // SECTIONS BELOW
+        // section 1: hero section
         #hero{
             // background-color: aquamarine;
             text-align: center;
-            padding: 10px;
+            padding: 20px 10px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 10%;
 
+            // the * means all. it's so that we can select all the elements
             & *{
                 // border: 1px solid black;
                 // this is the "hi im... and am a" text
@@ -55,7 +66,7 @@ body{
                     display: flex;
                     justify-content: center;
                     align-items: end;
-                    @media (min-width: 500px) {
+                    @media (min-width: 720px) {
                         font-size: 2vw;
                     }
                 }
@@ -68,7 +79,7 @@ body{
                     a{
                         font-size: 13vw;
                         margin: 5px;
-                        transition: font-size 0.6s ease;
+                        transition: font-size 0.5s ease;
                         &:hover{
                             font-size: 15vw;
                             cursor: pointer;
@@ -80,10 +91,21 @@ body{
                     justify-content: space-between;
                     align-items: end;
                     justify-self: center;
-                    width: 100%;
-                    max-width: 600px;
+                    background-color: greenyellow;
+                    width: 85vw;
+                    @media (max-width: 700px) {
+                        width: 100%;
+                        max-width: 600px;
+                        background-color: aqua;
+                    }
                 }
             }
         }
+
+
+
+        // section 2: skills section
+
+        // section 3: about me section
     }
 }
