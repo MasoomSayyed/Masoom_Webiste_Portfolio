@@ -41,7 +41,6 @@ body main {
   position: relative;
 }
 body main #hero {
-  background-color: aquamarine;
   text-align: center;
   padding: 10px;
   display: flex;
@@ -49,9 +48,6 @@ body main #hero {
   justify-content: center;
   align-items: center;
   gap: 10%;
-}
-body main #hero * {
-  border: 1px solid black;
 }
 body main #hero *:nth-child(1) {
   display: flex;

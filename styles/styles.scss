@@ -38,7 +38,7 @@ body{
     main{
         position: relative;
         #hero{
-            background-color: aquamarine;
+            // background-color: aquamarine;
             text-align: center;
             padding: 10px;
             display: flex;
@@ -48,7 +48,7 @@ body{
             gap: 10%;
 
             & *{
-                border: 1px solid black;
+                // border: 1px solid black;
                 // this is the "hi im... and am a" text
                 &:nth-child(1){
                     display: flex;
