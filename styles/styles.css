@@ -28,7 +28,8 @@ body header nav {
 }
 body header nav a {
   margin: 5px 10px 0 10px;
-  background-color: aqua;
+  background-color: rgb(84, 84, 84);
+  color: black;
   border-radius: 20px;
   padding: 5px 10px;
   text-align: center;
