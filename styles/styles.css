@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  position: relative;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  z-index: 1000;
+  justify-content: flex-end;
+}
+body header nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+@media (max-width: 400px) {
+  body header nav {
+    width: 100%;
+    padding: 0;
+  }
+}
+body header nav a {
+  margin: 5px 10px 0 10px;
+  background-color: aqua;
+  border-radius: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main {
+  position: relative;
+}
+body main #hero {
+  background-color: aquamarine;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+body main #hero * {
+  border: 1px solid black;
+}
+body main #hero *:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+@media (min-width: 500px) {
+  body main #hero *:nth-child(1) {
+    font-size: 2vw;
+  }
+}
+body main #hero *:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main #hero *:nth-child(2) a {
+  font-size: 13vw;
+  margin: 5px;
+  transition: font-size 0.6s ease;
+}
+body main #hero *:nth-child(2) a:hover {
+  font-size: 15vw;
+  cursor: pointer;
+}
+body main #hero *:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  justify-self: center;
+  width: 100%;
+  max-width: 600px;
+}/*# sourceMappingURL=styles.css.map */

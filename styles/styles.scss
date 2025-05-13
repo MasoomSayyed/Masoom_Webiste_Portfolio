@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    position: relative;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    header{
+        position: sticky;
+        top: 0;
+        width: 100%;
+        display: flex;
+        z-index: 1000; 
+        justify-content: flex-end;
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+            // if screen is below 480 then width 100%
+            @media (max-width: 400px) {
+                width: 100%;
+                padding: 0;
+                }
+            a{
+                margin: 5px 10px 0 10px;
+                background-color: aqua;
+                border-radius: 20px;
+                padding: 5px 10px;
+                text-align: center;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    main{
+        position: relative;
+        #hero{
+            background-color: aquamarine;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10%;
+
+            & *{
+                border: 1px solid black;
+                // this is the "hi im... and am a" text
+                &:nth-child(1){
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                    @media (min-width: 500px) {
+                        font-size: 2vw;
+                    }
+                }
+                // this is the big heading for "programmer n 3d artist"
+                &:nth-child(2){
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    a{
+                        font-size: 13vw;
+                        margin: 5px;
+                        transition: font-size 0.6s ease;
+                        &:hover{
+                            font-size: 15vw;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: end;
+                    justify-self: center;
+                    width: 100%;
+                    max-width: 600px;
+                }
+            }
+        }
+    }
+}

@@ -1,1 +1,4 @@
 u will put all ur css/scss here
+im using scss/sass to generate css.
+i can write css too but scss is just easier to read.
+once the scss is done. i have an extention that reads scss n generates css for me
